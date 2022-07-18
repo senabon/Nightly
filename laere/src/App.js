@@ -12,19 +12,19 @@ import ProfilePage from './Components/UserProfile'
 import EditProfile from './Components/ProfileEdit'
 
 
-function Store({ match }) {
-  let { id } = match.params;
-  const imageHasLoaded = true;
+// function Store({ match }) {
+//   let { id } = match.params;
+//   const imageHasLoaded = true;
 
-  return (
-    <>
-      <List selectedId={id} />
-      <AnimatePresence>
-        {id && imageHasLoaded && <Item id={id} key="item" />}
-      </AnimatePresence>
-    </>
-  );
-}
+//   return (
+//     <>
+//       <List selectedId={id} />
+//       <AnimatePresence>
+//         {id && imageHasLoaded && <Item id={id} key="item" />}
+//       </AnimatePresence>
+//     </>
+//   );
+// }
 
 function App() {
   return (

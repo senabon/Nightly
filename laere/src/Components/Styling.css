@@ -58,9 +58,26 @@ li{
     border: none;
 }
 
+#searchpageInput{
+    border-radius: 20px;
+    height: 9.5vh;
+    width: 80vh;
+    font-size: 20px;
+    border: none;
+    margin-top: 30%;
+}
+
+
 #searchInput:focus-visible{
     outline: none;
+}
 
+#pg-search-button{
+    color: red;
+    height: 5vh;
+    font-size: 200%;
+    border-radius: 20px;
+    border:none;
 }
 
 
