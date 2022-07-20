@@ -10,6 +10,7 @@ import List from './Components/EventList';
 import { Item } from './Components/Item';
 import ProfilePage from './Components/UserProfile'
 import EditProfile from './Components/ProfileEdit'
+import Login from './Components/SignIn';
 
 
 // function Store({ match }) {
@@ -29,7 +30,7 @@ import EditProfile from './Components/ProfileEdit'
 function App() {
   return (
     <div className="App">
-    <Header/>
+   
       <div className="container">
       
         <Routes>
@@ -37,6 +38,7 @@ function App() {
               <Route path='/search' element={<Search/>} />
               <Route path='/user-profile' element={<ProfilePage/>}/>
               <Route path='/edit-user-profile' element={<EditProfile/>}/>
+              <Route path='{LOGIN_URL}' component={Login}/>
         </Routes>
     </div>
     <Footer/>

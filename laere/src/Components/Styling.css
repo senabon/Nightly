@@ -64,7 +64,7 @@ li{
     width: 80vh;
     font-size: 20px;
     border: none;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 
@@ -147,3 +147,19 @@ input, textarea{
 
 }
 
+
+.card{
+    border:  3px solid black;
+    width: 10vw;
+    height: 10vh;
+}
+
+.carousel-wrapper{
+    margin-top: 0px;
+}
+
+
+.card-img{
+    height: 190%;
+    width: 100%;
+}

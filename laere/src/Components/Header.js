@@ -19,6 +19,7 @@ export default class Header extends Component {
           <li><LinkScroll to="featured" spy={true} smooth={true}><BsIcons.BsStars style={{fontSize: '130%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> Featured</LinkRouter></LinkScroll></li>
           <li><LinkScroll to="about" spy={true} smooth={true}><MdIcons.MdOutlineWavingHand style ={{fontSize: '130%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> About</LinkRouter></LinkScroll></li>
           <li><LinkScroll to="contact" spy={true} smooth={true}><MdIcons.MdOutlinePersonPinCircle style ={{fontSize: '140%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> Contact</LinkRouter></LinkScroll></li>
+          <li> <LinkRouter to="/signin-up" style={{color: 'white', textDecoration: 'none'}}>Sign In</LinkRouter></li>
           </HeaderIcons>
         </ul>
         </div>

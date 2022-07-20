@@ -15,8 +15,9 @@ function Search(){
     
 
     return(
-        <div className="search-page">
+        <>
         <Header/>
+        <div className="search-page">
             <div className="results-container">
                 <div className='search-pg-bar'>
                     <input type="text" id="searchpageInput" onChange={event => setQuery(event.target.value)} placeholder="What would you like to learn?"/>
@@ -29,15 +30,15 @@ function Search(){
                         //console.log
                         return post;
                     }else if (post.title.toLowerCase().includes(query.toLowerCase())) {
-                        //console.log(post)
+                        console.log(post.title)
                         return post;
                     }
                      })
-                .map((post, index) => {
-                     <div key={index}>
-                    <p>{post.title}</p>
-                    <p>{post.location}</p>
-                </div>
+                .map((post) => {
+                    <div className='card' key={post.id}>
+                        <p>{post.title}</p>
+                        <p>{post.location}</p>
+                    </div>
                 })
                     }
                     <h1>Hi</h1>
@@ -47,6 +48,7 @@ function Search(){
                 
                  
         </div>
+        </>
     )
 
 
