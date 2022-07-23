@@ -1,14 +1,22 @@
-# Getting Started with Create React App
-
-Nightly, Inc. 
+# Nightly, Inc. 
 
 
+
+Nightly is a one stop app for events catering to people who like to say up late but don't want to stay home. 
+
+# Link to Deployed Front-End
 Front-End
 https://candid-swan-633dc0.netlify.app/
 
 
+# Link to Deployed Back-End
 Back-End
 https://git.heroku.com/nightlyinc.git
+
+
+# Link to Back-End Repo
+
+https://github.com/senabon/Nightly-Back
 
 
 ![Screen Shot 2022-07-23 at 2 32 36 AM](https://user-images.githubusercontent.com/90279827/180597350-271170aa-5060-4dc2-a6cb-78b5b885338b.png)
