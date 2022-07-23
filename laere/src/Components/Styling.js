@@ -19,7 +19,9 @@ export const HeaderIcons = styled.li`
     margin-right: auto;
     justify-content: space-evenly;
     font-size: 130%;
-    display: flex;,
+    display: flex;
+
+
    
 `
 

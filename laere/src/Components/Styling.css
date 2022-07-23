@@ -14,7 +14,7 @@
 
 .name, .email{
     height:3vh;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 5px;
 }
 
@@ -107,10 +107,7 @@ li{
 
 
 #contact{
-    background-image: url('city-balcony.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    color: #dee3e4;
     font-weight: bold;
 
 }
@@ -120,12 +117,6 @@ input, textarea{
     opacity: 80%;
 
 }
-
-.nightly-logo{
-    z-index: 99;
-    float:left;
-}
-
 
 .Home{
     z-index: 0;
@@ -162,4 +153,61 @@ input, textarea{
 .card-img{
     height: 190%;
     width: 100%;
+}
+
+.Home{
+   background-color: black;
+}
+
+.submit:hover{
+    background-color: #485a84;
+}
+
+.about{
+    color:white;
+}
+
+.about:hover{
+    text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 40px white,
+    0 0 70px white,
+    0 0 80px white,
+    0 0 100px white,
+    0 0 150px white;
+    color: white;
+}
+.contact:hover{
+    text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 40px white,
+    0 0 70px white,
+    0 0 80px white,
+    0 0 100px white,
+    0 0 150px white;
+    color: white;
+}
+
+.featured:hover{
+    text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 40px white,
+    0 0 70px white,
+    0 0 80px white,
+    0 0 100px white,
+    0 0 150px white;
+    color: white;
+}
+
+
+.footer-area{
+    margin-top: 10%;
+}
+
+.card-search{
+    display: inline-block;
+    margin: 10px;
 }

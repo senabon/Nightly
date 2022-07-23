@@ -15,11 +15,11 @@ export default class Header extends Component {
         <ul>
         <HeaderIcons>
           <li><LinkScroll className='home-header' activeClass="active" to="home" spy={true} smooth={true}><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}>Home</LinkRouter></LinkScroll></li>
-          <li><LinkRouter to="/search" spy={true} smooth={true} style={{color: 'white', textDecoration: 'none'}}><FaIcons.FaSearch style ={{fontSize: '120%', color: 'white'}}/> Search</LinkRouter></li>
+          <li><LinkRouter to="/events" spy={true} smooth={true} style={{color: 'white', textDecoration: 'none'}}><FaIcons.FaSearch style ={{fontSize: '120%', color: 'white'}}/> Search</LinkRouter></li>
           <li><LinkScroll to="featured" spy={true} smooth={true}><BsIcons.BsStars style={{fontSize: '130%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> Featured</LinkRouter></LinkScroll></li>
           <li><LinkScroll to="about" spy={true} smooth={true}><MdIcons.MdOutlineWavingHand style ={{fontSize: '130%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> About</LinkRouter></LinkScroll></li>
           <li><LinkScroll to="contact" spy={true} smooth={true}><MdIcons.MdOutlinePersonPinCircle style ={{fontSize: '140%', color: 'white'}}/><LinkRouter to="/" style={{color: 'white', textDecoration: 'none'}}> Contact</LinkRouter></LinkScroll></li>
-          <li> <LinkRouter to="/signin-up" style={{color: 'white', textDecoration: 'none'}}>Sign In</LinkRouter></li>
+          <li> <LinkRouter to="/login" style={{color: 'white', textDecoration: 'none'}}>Sign In</LinkRouter></li>
           </HeaderIcons>
         </ul>
         </div>

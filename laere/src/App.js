@@ -1,16 +1,18 @@
+import React, {useState} from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
-import Header from './Components/Header'
 import Footer from './Components/Footer'
 import Home from './Components/Home'
 import Search from './Components/SearchPage';
 //import SearchPage from './Components/SearchPage';
 import { AnimatePresence } from "framer-motion";
-import List from './Components/EventList';
-import { Item } from './Components/Item';
-import ProfilePage from './Components/UserProfile'
 import EditProfile from './Components/ProfileEdit'
-import Login from './Components/SignIn';
+import Login from './Components/Login';
+import LogOut from './Components/Logout';
+import ListEvents from './Components/ListEvents';
+import NewEvent from './Components/NewEvent';
+import ProfilePage from './Components/profile'
+import SignUp from './Components/SignUp'
 
 
 // function Store({ match }) {
@@ -28,20 +30,33 @@ import Login from './Components/SignIn';
 // }
 
 function App() {
+
+  const [userSignedIn, setUserSignedIn] = useState(localStorage.getItem('user'))
+
+  //const [userSignedIn, setUserSignedIn] = useState(null)
+  const [accessToken, setAccessToken] = useState(localStorage.getItem('access_token'))
+
+
   return (
     <div className="App">
    
       <div className="container">
       
         <Routes>
-              <Route path='/' element={<Home/>}/>
-              <Route path='/search' element={<Search/>} />
+              <Route path='' element={<Home/>}/>
+              <Route path='events' element={<ListEvents/>} />
               <Route path='/user-profile' element={<ProfilePage/>}/>
               <Route path='/edit-user-profile' element={<EditProfile/>}/>
-              <Route path='{LOGIN_URL}' component={Login}/>
+              <Route path='login' element={<Login/>}/>
+              <Route path='signup' element={<SignUp/>}/>
+              <Route path='/addevents' element={<NewEvent/>}/>
+              <Route path='logout' element={<LogOut
+                userSignedIn={userSignedIn}
+                setUserSignedIn={setUserSignedIn}
+                setAccessToken={setAccessToken}
+                />}/>
         </Routes>
     </div>
-    <Footer/>
     </div>
   );
 }

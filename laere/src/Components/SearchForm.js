@@ -11,7 +11,7 @@ function SearchForm() {
       <div className='search'>
        
             <input type="text" id="searchInput" onChange={event => setQuery(event.target.value)} placeholder="What do you want to do?"/>
-            <button type='submit'><HiIcons.HiSearchCircle id='search-button'/></button> 
+            <button type='submit' className='submit' style={{border: 'none',backgroundColor: 'white', borderRadius: '25px'}}><HiIcons.HiSearchCircle id='search-button' /></button> 
     </div>
 </div>
   )
