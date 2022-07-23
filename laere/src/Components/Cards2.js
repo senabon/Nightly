@@ -1,10 +1,12 @@
 
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { motion } from "framer-motion";
 import './Styling'
 
 function Featured() {
   return (
+    <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
     <Card style={{ width: '25rem', height: '8rem', borderRadius:'10px', border: '0px' }}>
     <div style={{border: 'white 2px', borderRadius: '10px', boxShadow: '0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19)', backgroundColor:'black'}}>
       <Card.Img variant="top" src={require('./kayaking.png')} className="card-img" style={{borderRadius:'20px'}}/>
@@ -24,6 +26,7 @@ function Featured() {
       </Card.Body>
       </div>
     </Card>
+    </motion.div>
   );
 }
 

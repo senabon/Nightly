@@ -17,6 +17,8 @@ import Footer from './Footer'
 
 
 export default class Home extends Component {
+
+
     render() {
         return (
             <>
@@ -78,3 +80,6 @@ export default class Home extends Component {
         )
     }
 }
+
+
+

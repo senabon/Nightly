@@ -216,3 +216,9 @@ input, textarea{
 .form{
     margin: 20px;
 }
+
+
+p, .card-search, .Home{
+    font-family: 'IM Fell English', serif;
+font-family: 'Montserrat', sans-serif;
+}

@@ -3,6 +3,8 @@ import React from 'react';
 import Header from './Header'
 import EventForm from './Form';
 import { Component } from 'react';
+import './Styling.css'
+
 
 class NewEvent extends Component {
   state={
@@ -29,6 +31,7 @@ class NewEvent extends Component {
             <Header/>
           </div>
           <div style={{height:'180vh', marginTop: '20%'}}>
+            <h2>Add An Event</h2>
           <EventForm/>
           </div>
           <div>

@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
-import Footer from './Components/Footer'
+//import Footer from './Components/Footer'
 import Home from './Components/Home'
-import Search from './Components/SearchPage';
+//import Search from './Components/SearchPage';
 //import SearchPage from './Components/SearchPage';
-import { AnimatePresence } from "framer-motion";
-import EditProfile from './Components/ProfileEdit'
+//import { AnimatePresence } from "framer-motion";
+//import EditProfile from './Components/ProfileEdit'
 import Login from './Components/Login';
 import LogOut from './Components/Logout';
 import ListEvents from './Components/ListEvents';
 import NewEvent from './Components/NewEvent';
-import ProfilePage from './Components/profile'
+//import ProfilePage from './Components/profile'
 import SignUp from './Components/SignUp'
 
 
@@ -45,8 +45,7 @@ function App() {
         <Routes>
               <Route path='' element={<Home/>}/>
               <Route path='events' element={<ListEvents/>} />
-              <Route path='/user-profile' element={<ProfilePage/>}/>
-              <Route path='/edit-user-profile' element={<EditProfile/>}/>
+              
               <Route path='login' element={<Login/>}/>
               <Route path='signup' element={<SignUp/>}/>
               <Route path='/addevents' element={<NewEvent/>}/>
