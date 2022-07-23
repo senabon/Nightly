@@ -211,3 +211,8 @@ input, textarea{
     display: inline-block;
     margin: 10px;
 }
+
+
+.form{
+    margin: 20px;
+}

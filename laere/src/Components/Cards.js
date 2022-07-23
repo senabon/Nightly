@@ -11,14 +11,13 @@ function FeaturedTwo() {
       <Card.Body className="card-body" >
         <Card.Title style={{ backgroundColor: '#485a84', color:'white'}}>Night @ the Georgia Aquarium</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         Spend a night under the ocean!
         </Card.Text>
     </Card.Body>
     <ListGroup className="list-group-flush" style={{ }}>
         <ListGroup.Item> Atlanta, Georgia</ListGroup.Item>
-        <ListGroup.Item>Date:9th November</ListGroup.Item>
-        <ListGroup.Item>Host: 8pm-12am</ListGroup.Item>
+        <ListGroup.Item>Date: 9th November - 8pm</ListGroup.Item>
+        <ListGroup.Item>Host: The Georgia Aquarium</ListGroup.Item>
       </ListGroup>
     <Card.Body>
         <Card.Link href="https://www.georgiaaquarium.org/">See Event</Card.Link>

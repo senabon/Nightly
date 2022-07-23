@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import SearchForm from './SearchForm'
 import Contact from './ContactForm'
 import './Styling.css'
-import {Link as LinkRouter} from 'react-router-dom'
-import logo from './Nightly.png'
+//import {Link as LinkRouter} from 'react-router-dom'
+//import logo from './Nightly.png'
 import Header from './Header'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -23,6 +23,7 @@ export default class Home extends Component {
             <Header/>
             <div className='Home'>
                 <div id="search" style={{height: 600}}>
+                <img style={{height:'50%', marginTop: '-7%', marginLeft: '-16%'}} src={require('./Nightly.png')} alt="nightly-logo"/>
                 <SearchForm/>
                 </div>
                 <div id="featured" style={{height: 600, color: '#dee3e4'}}>
@@ -38,20 +39,20 @@ export default class Home extends Component {
                     <h1 className='about'>About Us</h1>
                     Nightly, Inc. is a company that caters to night owls. 
                     <h3>Companies we partner with:</h3>
-                    <div className='carousel-wrapper' style={{width: '30%', height: '5%'}}>
+                    <div className='carousel-wrapper' style={{width: '30%', height: '5%',  marginLeft:'35%' }}>
                     <Carousel showArrows={true} className="carousel-dark" //onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
                     >
                         <div className='carousel-item active'>
                             <img src={require("./Netflix.png")} className="d-block w-100" alt="Netlfix-logo" class='active' />
                         </div>
                         <div>
-                            <img className="d-block w-300" alt="spotify-logo" src={require("./Spotify-logo.png")} />
+                            <img className="d-block w-300" alt="spotify-logo" src={require("./Spotify.png")} />
                         </div>
                         <div>
                             <img className="carousel-img" alt="i-heart-radio-logo" src={require("./IHR.png")} />
                         </div>
                         <div>
-                            <img className="carousel-img" alt="trip-advisor-logo" src={require("./tripadvisor.png")} />
+                            <img className="carousel-img" alt="KLM-logo" src={require("./KLM.png")} />
                         </div>
                         <div>
                             <img className="carousel-img" alt="bumble-logo" src={require("./bumble.png")} />

@@ -15,7 +15,7 @@ export const FooterIcons = styled.li`
 `
 export const HeaderIcons = styled.li`
     list-style: none;
-    margin-left: auto;
+    margin-left: 10%;
     margin-right: auto;
     justify-content: space-evenly;
     font-size: 130%;

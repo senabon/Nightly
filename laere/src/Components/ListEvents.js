@@ -6,6 +6,9 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { Link as LinkRouter} from 'react-router-dom';
 //import './Styling.css'
 import Card from 'react-bootstrap/Card';
+import { useRef } from "react";
+import { motion } from "framer-motion";
+
 
 import NewEvent from './NewEvent'
 import SearchForm from './SearchForm';
@@ -14,6 +17,7 @@ import { render } from '@testing-library/react';
 function ListEvents({userSignedIn, accessToken}) {
     
     const eventRestEndpoint = 'events'
+    const constraintsRef = useRef(null);
 
     const [events, setEvents] = useState([])
 
@@ -29,10 +33,12 @@ function ListEvents({userSignedIn, accessToken}) {
   return (
   <div style={{backgroundColor:'black'}}>
       <Header/>
-    <div style={{height:'200vh', color: 'white'}}>
-    <div style={{alignItems:'center', justifyContent: 'center', marginLeft: '20%'}}>
+    <div style={{height:'220vh', color: 'white'}}>
+    <img style={{height:'20%', marginTop: '-7%', marginLeft: '-80%'}} src={require('./Nightly.png')}/>
+    <div style={{alignItems:'center', justifyContent: 'center', marginLeft: '20%', marginTop: '-25%'}}>
       <SearchForm/>
     </div>
+    
       <ul>
       {
         events.map((item,ind) => {
@@ -64,6 +70,7 @@ function ListEvents({userSignedIn, accessToken}) {
       })
     }
       </ul>
+     
       {userSignedIn ? <NewEvent accessToken={accessToken}/> : null}
       <button><LinkRouter to='/addevents'>Add an Event </LinkRouter></button>
       </div>

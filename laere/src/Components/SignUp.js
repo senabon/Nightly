@@ -77,7 +77,7 @@ function SignUp({setUserSignedIn}) {
     return (
     <div style={{backgroundColor:'black'}}>
         <Header/>
-    <div style={{height:'700px', color: 'white'}}>
+    <div style={{height:'700px', color: 'white', marginTop:'30%'}}>
       <h3>Make an Account!</h3>
         <form onSubmit={handleLogin}>
             <label>username:</label>
