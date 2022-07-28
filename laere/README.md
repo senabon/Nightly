@@ -23,6 +23,7 @@ https://github.com/senabon/Nightly-Back
 React 
 - Bootstrap
 - Framer Motion
+
 Django
 Postresql
 
