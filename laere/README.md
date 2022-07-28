@@ -19,6 +19,12 @@ https://git.heroku.com/nightlyinc.git
 
 https://github.com/senabon/Nightly-Back
 
+#Technologies Used 
+React 
+- Bootstrap
+- Framer Motion
+Django
+Postresql
 
 ![Screen Shot 2022-07-23 at 2 32 36 AM](https://user-images.githubusercontent.com/90279827/180597350-271170aa-5060-4dc2-a6cb-78b5b885338b.png)
 
