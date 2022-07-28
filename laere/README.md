@@ -19,7 +19,7 @@ https://git.heroku.com/nightlyinc.git
 
 https://github.com/senabon/Nightly-Back
 
-#Technologies Used 
+## Technologies Used 
 React 
 - Bootstrap
 - Framer Motion
