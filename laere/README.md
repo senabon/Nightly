@@ -1,17 +1,13 @@
 # Nightly, Inc. 
-
-<<<<<<< HEAD
-Nightly, Inc. is an 
-
-
 =======
-
 
 Nightly is a one stop app for events catering to people who like to say up late but don't want to stay home. 
 
 # Link to Deployed Front-End
 Front-End
 https://candid-swan-633dc0.netlify.app/
+
+*currently a work in progress*
 
 
 # Link to Deployed Back-End
